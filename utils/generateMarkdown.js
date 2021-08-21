@@ -10,7 +10,10 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-function renderDescription(data){}
+function renderDescription(data){
+  return data.description
+}
+
 function renderTableOfContents(data){}
 function renderInstallation(data){}
 function renderUsage(data){}
@@ -22,26 +25,33 @@ function renderQuestions(data){}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   data = JSON.parse(data)
-  return `# ${data.title}
-
+  
+  return `# ${data.title}\n
+    
   ## Description
+  ${renderDescription(data)}
 
   ## Table of Contents
+  ${renderDescription(data)}
 
   ## Installation
+  ${renderDescription(data)}
 
   ## Usage
+  ${renderDescription(data)}
 
   ## License
+  ${renderDescription(data)}
 
   ## Contributing
+  ${renderDescription(data)}
 
   ## Tests
+  ${renderDescription(data)}
 
   ## Questions
-
-  
-`;
+  ${renderDescription(data)}
+  `;
 }
 
 module.exports = {
