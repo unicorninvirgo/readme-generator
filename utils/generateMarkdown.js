@@ -14,13 +14,33 @@ function renderDescription(data){
   return data.description
 }
 
-function renderTableOfContents(data){}
-function renderInstallation(data){}
-function renderUsage(data){}
-function renderLicense(data){}
-function renderContributing(data){}
-function renderTests(data){}
-function renderQuestions(data){}
+function renderTableOfContents(data){
+  return '';
+}
+
+function renderInstallation(data){
+  return data.install
+}
+
+function renderUsage(data){
+  return data.usage
+}
+
+function renderLicense(data){
+  return data.description
+}
+
+function renderContributing(data){
+  return data.contributors
+}
+
+function renderTests(data){
+  return data.tests
+}
+
+function renderQuestions(data){
+  return data.questions
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -32,25 +52,25 @@ function generateMarkdown(data) {
   ${renderDescription(data)}
 
   ## Table of Contents
-  ${renderDescription(data)}
+  ${renderTableOfContents(data)}
 
   ## Installation
-  ${renderDescription(data)}
+  ${renderInstallation(data)}
 
   ## Usage
-  ${renderDescription(data)}
+  ${renderUsage(data)}
 
   ## License
-  ${renderDescription(data)}
+  ${renderLicense(data)}
 
   ## Contributing
-  ${renderDescription(data)}
+  ${renderContributing(data)}
 
   ## Tests
-  ${renderDescription(data)}
+  ${renderTests(data)}
 
   ## Questions
-  ${renderDescription(data)}
+  ${renderQuestions(data)}
   `;
 }
 
