@@ -7,7 +7,7 @@ const fileName = "README.md"
 
 // TODO: Create an array of questions for user input
 const questions = [
-    {
+   {
         type: 'input',
         message: 'What is the title of your project?',
         name: 'title', 
@@ -20,7 +20,7 @@ const questions = [
     {
         type: 'input',
         message: 'What are the install instructions of your project?',
-        name: 'install,
+        name: 'install',
     },
     {
         type: 'input',
@@ -37,21 +37,50 @@ const questions = [
         message: 'What are the test instructions?',
         name: 'test',
     }, 
+    {
+        type: 'expand',
+        message: 'Please select the license that covers your code: g - GNU GPL v3, m - MIT, p - Mozilla Public License',
+        name: 'license',
+        choices: [
+            {
+              key: 'g',
+              name: 'GNU GPL v3',
+              value: 'GNU GPL v3|https://img.shields.io/badge/License-GPLv3-blue.svg',
+            },
+            {
+              key: 'm',
+              name: 'MIT',
+              value: 'MIT|https://img.shields.io/badge/License-MIT-yellow.svg',
+            },
+            {
+              key: 'p',
+              name: 'Mozilla Public License',
+              value: 'Mozilla Public License|https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg',
+            },
+          ],
+    },
      {
         type: 'input',
-        message: 'What are the test instructions?',
-        name: 'test',
+        message: 'What is your email address?',
+        name: 'email',
     }, 
+    {
+        type: 'input',
+        message: 'What is your github name?',
+        name: 'githubname',
+    }, 
+    
 
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 
+    //console.log(data.license.split('|'));
+
     let readMe = mrkDwn.generateMarkdown(JSON.stringify(data,null,''));
-    /*fs.writeFile(fileName,JSON.stringify(data,null,'\t'),(err) =>
-        err ? console.log(err) : console.log('Success!'));*/
-  fs.writeFile(fileName,readMe,(err) =>
+ 
+    fs.writeFile(fileName,readMe,(err) =>
         err ? console.log(err) : console.log('Success!'));
 }
 
