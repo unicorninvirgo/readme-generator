@@ -1,9 +1,9 @@
-# alkfd
+# ReadMe Generator
 
-  !()<img src="https://img.shields.io/badge/License-GPLv3-blue.svg">
+  <img src="https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg">
 
   ## Description
-  adfa
+  This project will allow a user to create a ReadMe file by answering a series of questions
 
   ## Table of Contents
   
@@ -26,24 +26,24 @@
   
   
   ## Installation
-  adfad
+  Download the file from git.  Install the file.  Open the directory of the file in your code editor.  Open a terminal window. Type node index.js to launch the project.
 
   ## Usage
-  afdaf
+  This project should be used to create a README.md file
 
   ## License
-  The license type of this project is GNU GPL v3
+  The license type of this project is Mozilla Public License
 
   ## Contributing
-  adfa
+  n/a
 
   ## Tests
   undefined
 
-  :arrow_right: ## Questions
-  [Click Here](https://github.com/adfad) to checkout my github profile.
+  ## Questions 
+  [Click Here](https://github.com/UnicornInVirgo) to checkout my github profile.
 
 
-  If you want to discuss hiring me for your upcoming projects, feel free to shoot me an email lakjdfa
+  If you want to discuss hiring me for your upcoming projects, feel free to shoot me an email erica@ericambaity.com
   
   

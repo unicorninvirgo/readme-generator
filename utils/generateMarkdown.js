@@ -1,15 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
 
 //return description of project
 function renderDescription(data){
@@ -18,9 +6,6 @@ function renderDescription(data){
 
 function renderTableOfContents(data){
   return `
-  ## [Description](#description)
-
-  ## [Table of Contents](#tableofcontents)
   
   ## [Installation](#installation)
   
@@ -64,7 +49,7 @@ function renderContributing(data){
 }
 
 function renderTests(data){
-  return data.tests
+  return data.test
 }
 
 function renderQuestions(data){
@@ -102,7 +87,7 @@ function generateMarkdown(data) {
   ## Tests
   ${renderTests(data)}
 
-  :arrow_right: ## Questions
+  ## Questions 
   ${renderQuestions(data)}
   `;
 }
